@@ -1,0 +1,97 @@
+:root {
+    --bordeaux: #690504;
+    --green: #046667;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--bordeaux);
+}
+
+
+.navbar{
+    background: white;
+}
+
+.nav-link, a{
+    color: var(--bordeaux);
+}
+
+.nav-link:hover , a:hover{
+    color: var(--green);
+}
+
+.btn-primary{
+    background-color: var(--bordeaux);
+    border-color: var(--bordeaux);
+}
+
+.btn-primary:hover{
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.ultimi-arrivi{
+    text-align: center;
+    margin-top: 2em;
+}
+/* card homepage */
+.row-home {margin: 0 -5px;}
+.row-home:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-home {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+@media screen and (max-width: 600px) {
+    .column-home {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card-home {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+
+/* Carrello */
+td,th{
+    padding: 2em;
+}
+
+/* shop mobile*/
+@media (min-width: 320px) and (max-width: 750px) {
+    .categorie {
+        position: fixed;
+        width: 35px;
+        padding: 10px;
+        margin-top: -7em;
+    }
+
+    .testo-home{
+        text-align: center;
+    }
+
+    .justify-content-end {
+        margin-left: 10em;
+    }
+
+    #immagine-home{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    #immagine-home{
+        display: none;
+    }
+}
